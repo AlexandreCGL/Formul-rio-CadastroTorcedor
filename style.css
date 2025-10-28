@@ -1,0 +1,162 @@
+/* ====== RESET ====== */
+* { /* Seleciona todos os elementos da página */
+  margin: 0; /* Remove a margem padrão dos elementos */
+  padding: 0; /* Remove o espaçamento interno padrão */
+  box-sizing: border-box; /* Faz com que o padding e a borda entrem no cálculo total da largura/altura */
+  font-family: 'Poppins', sans-serif; /* Define a fonte padrão para todo o site */
+}
+
+/* ====== BODY ====== */
+body {
+  background: linear-gradient(135deg, #005c1f, #00a83e); /* Cria um degradê verde (lembra o campo de futebol) */
+  color: #222; /* Define a cor base do texto */
+  min-height: 100vh; /* Faz o body ocupar 100% da altura da tela */
+  display: flex; /* Ativa o modelo de layout flexível */
+  flex-direction: column; /* Organiza os elementos (header, main, footer) em coluna */
+  background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #fff; /* Fundo branco para o cabeçalho */
+  text-align: center; /* Centraliza o conteúdo dentro do header */
+  padding: 2rem 1rem; /* Adiciona espaçamento interno (topo/baixo = 2rem, laterais = 1rem) */
+  border-bottom: 5px solid #f1c40f; /* Linha amarela na parte inferior do header (lembra uma faixa de uniforme) */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona sombra leve abaixo do cabeçalho */
+}
+
+header .logo h1 {
+  color: #007f3d; /* Define a cor verde para o título principal */
+  font-size: 2.2rem; /* Aumenta o tamanho da fonte */
+  text-transform: uppercase; /* Deixa todas as letras maiúsculas */
+  letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+}
+
+header .logo p {
+  color: #555; /* Cinza médio para o subtítulo */
+  font-style: italic; /* Coloca o texto em itálico */
+  margin-top: 0.5rem; /* Adiciona espaço acima do parágrafo */
+  font-size: 1rem; /* Define o tamanho da fonte do slogan */
+}
+
+/* ====== MAIN CONTENT ====== */
+main {
+  flex: 1; /* Faz o main ocupar todo o espaço restante entre header e footer */
+  display: flex; /* Usa o modelo flexível */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  padding: 2rem; /* Adiciona espaçamento interno */
+}
+
+.Container {
+  background-color: #fff; /* Fundo branco do formulário */
+  padding: 2rem 3rem; /* Espaçamento interno (topo/baixo = 2rem, laterais = 3rem) */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25); /* Sombra mais intensa para destacar o container */
+  max-width: 500px; /* Largura máxima do container */
+  width: 100%; /* Faz o container ocupar 100% do espaço disponível até 500px */
+  border-top: 5px solid #f1c40f; /* Linha amarela na parte superior do container */
+}
+
+/* ====== TÍTULOS ====== */
+.Container h2 {
+  text-align: center; /* Centraliza o texto */
+  color: #007f3d; /* Verde bandeira para o título */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  font-weight: 700; /* Deixa o texto em negrito forte */
+  border-bottom: 2px solid #f1c40f; /* Linha amarela decorativa abaixo do título */
+  display: inline-block; /* Faz o título se comportar como bloco em linha (para a borda ficar do tamanho do texto) */
+  padding-bottom: 0.3rem; /* Espaço entre o texto e a borda inferior */
+}
+
+.Container p {
+  text-align: center; /* Centraliza o texto do parágrafo */
+  color: #444; /* Cinza escuro para boa leitura */
+  margin-bottom: 2rem; /* Espaço abaixo do texto */
+  font-size: 0.95rem; /* Tamanho da fonte um pouco menor */
+}
+
+/* ====== FORM ====== */
+form label {
+  display: block; /* Faz cada label ocupar uma linha inteira */
+  font-weight: 600; /* Deixa o texto levemente em negrito */
+  margin-bottom: 0.4rem; /* Espaço entre o label e o input abaixo */
+  color: #222; /* Cor escura para melhor contraste */
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%; /* Faz o campo ocupar toda a largura do container */
+  padding: 0.7rem; /* Espaçamento interno do campo */
+  border: 2px solid #ddd; /* Borda cinza clara */
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao focar */
+  outline: none; /* Remove o contorno azul padrão do navegador */
+  font-size: 1rem; /* Tamanho da fonte dentro dos campos */
+  margin-bottom: 1rem; /* Espaço entre os campos */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+  border-color: #00a83e; /* Altera a cor da borda para verde quando o campo está ativo */
+  box-shadow: 0 0 6px rgba(0, 168, 62, 0.3); /* Adiciona brilho verde em volta do campo ativo */
+}
+
+form input[type="radio"] {
+  accent-color: #007f3d; /* Define a cor verde para os botões de rádio */
+  margin-right: 0.4rem; /* Espaço entre o botão e o texto da opção */
+}
+
+/* ====== SUBMIT BUTTON ====== */
+form input[type="submit"] {
+  display: block; /* Faz o botão ocupar uma linha inteira */
+  width: 100%; /* Largura total dentro do container */
+  padding: 0.8rem; /* Espaçamento interno do botão */
+  background: linear-gradient(90deg, #007f3d, #00a83e); /* Degradê verde, lembrando gramado */
+  color: white; /* Texto branco */
+  font-weight: bold; /* Texto em negrito */
+  border: none; /* Remove borda padrão */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin-top: 1.5rem; /* Espaço acima do botão */
+  cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+  font-size: 1rem; /* Tamanho da fonte do botão */
+  text-transform: uppercase; /* Deixa o texto do botão em maiúsculas */
+  letter-spacing: 1px; /* Espaçamento entre as letras */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave ao passar o mouse */
+}
+
+form input[type="submit"]:hover {
+  transform: scale(1.03); /* Aumenta levemente o botão quando o mouse passa */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Adiciona sombra mais forte no hover */
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #007f3d; /* Fundo verde do rodapé */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem; /* Espaçamento interno */
+  color: white; /* Cor branca para o texto */
+  font-size: 0.95rem; /* Tamanho da fonte do rodapé */
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+  text-transform: uppercase; /* Letras maiúsculas */
+  border-top: 4px solid #f1c40f; /* Linha amarela acima do rodapé */
+}
+
+footer h3 {
+  font-size: 1rem; /* Define tamanho da fonte do h3 */
+  color: #f1c40f; /* Cor amarela para destaque */
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) { /* Quando a tela for menor que 600px (celulares) */
+  .Container {
+    padding: 1.5rem; /* Reduz o espaçamento interno */
+  }
+
+  header .logo h1 {
+    font-size: 1.8rem; /* Diminui o tamanho do título para caber melhor na tela pequena */
+  }
+}

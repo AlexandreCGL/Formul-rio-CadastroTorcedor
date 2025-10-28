@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Torcedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+    <div class="logo">
+<h1>Cadastro do torcedor</h1>
+<p>O time do seu coração está aqui!</p>
+
+    </div>
+
+</header>
+
+<main>
+    <div class="Container">
+    <label for="Cadastro"></label>
+    <h2>Formulário de Cadastro</h2>
+    <p>preencha os dados abaixo para cadastrar</p>
+
+    
+    <form action="#" id="Cadastro" method="post">
+        <br><label for="name">Nome completo:</label>
+<br><input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+ 
+<br><br><label for="email">Email:</label>
+<br><input type="email" id="Email" name="email" placeholder="Digite seu email" required>
+
+<br><br><label for="cpf">CPF:</label>
+<br><input type="text" name="cpf" id="cpf" placeholder="digite seu cpf " required>
+
+<br><br><label for="socio">Socio torcedor:</label><br>
+<input type="radio" name="socio" value="Sim">Sim
+<input type="radio" name="socio" value="Não">Não <br><br>
+
+<label for="Frequencia">Frequencia:</label><br>
+<input type="radio" name="frequencia" value="Sempre">Sempre <br><br>
+<input type="radio" name="frequencia" value="As vezes">As vezes <br><br>
+<input type="radio" name="frequencia" value="Frequentemente">Frequentemente <br><br>
+<input type="radio" name="frequencia" value="Nunca">Nunca <br>
+
+<br><br><label for="clube">Qual o seu clube do coração?</label>
+<br><select name="clube" id="clube">
+<option value="#">Selecione...</option>
+<option value="Atlético-MG">Atlético-MG</option>
+<option value="Bahia">Bahia</option>
+<option value="Botafogo">Botafogo</option>
+<option value="Bragantino">Bragantino</option>
+<option value="Bragantino">Bragantino</option>
+<option value="Corinthians">Corinthians</option>
+<option value="Flamengo">Flamengo</option>
+<option value="Fluminense">Fluminense</option>
+<option value="#"></option>
+</select>
+
+<br><br><label for="camisa">Possui camisa oficial?</label><br>
+<select name="camisa" id="camisa">
+<option value="#">Selecione...</option>
+<option value="afirmcam">Sim</option>
+<option value="Negatcam">Não</option>
+</select>
+</select>
+<br><br><input type="submit" name="submit" id="submit">
+
+    </form>
+</div>
+</main>
+
+<footer>
+
+    <div class="rodape">
+<br><h3>developed by</h3>
+
+    </div>
+</footer>
+</body>
+</html>
