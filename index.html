@@ -24,7 +24,7 @@
     <p>preencha os dados abaixo para cadastrar</p>
 
     
-    <form action="#" id="Cadastro" method="post">
+    <form action="./pages/enviarTorcedorAction.php" id="Cadastro" method="post">
         <br><label for="name">Nome completo:</label>
 <br><input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
  
@@ -58,11 +58,17 @@
 <option value="#"></option>
 </select>
 
-<br><br><label for="camisa">Possui camisa oficial?</label><br>
-<select name="camisa" id="camisa">
-<option value="#">Selecione...</option>
-<option value="afirmcam">Sim</option>
-<option value="Negatcam">Não</option>
+<div class="campo-checkbox">
+                <input type="checkbox" id="socio" name="socio_torcedor">
+                <label for="socio">Sou Sócio Torcedor do meu clube</label>
+            </div>
+ 
+            <div class="campo-checkbox">
+                <input type="checkbox" id="camisa" name="camisa_oficial">
+                <label for="camisa">Possuo camisa oficial do meu clube</label>
+            </div>
+
+
 </select>
 </select>
 <br><br><input type="submit" name="submit" id="submit">
